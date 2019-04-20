@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainView"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvDynamic"
+        android:layout_width="wrap_content"
+        android:text="Dynamic SIP"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvtagline"
+        android:layout_below="@id/tvDynamic"
+        android:layout_width="wrap_content"
+        android:text="Earn more than normal SIP"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+
+
+    <view
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        class="com.example.cashrichdemo.PieView"
+        android:layout_below="@id/tvtagline"
+        android:layout_marginTop="28dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pie_view" />
+
+    <RelativeLayout
+        android:id="@+id/rlCircularView"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvtagline"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/tvFixedValue"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:text="50%"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvShareValue"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="32dp"
+            android:text="50%"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDates"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_below="@id/rlCircularView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
